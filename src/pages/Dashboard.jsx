@@ -67,27 +67,7 @@ export default function Dashboard() {
         />
       </div>
       
-      <div className="quick-actions">
-        <h2>Quick Actions</h2>
-        <div className="actions-grid">
-          <a href="/profile" className="action-card">
-            <span>✏️</span>
-            <p>Update Profile</p>
-          </a>
-          <a href="/funding" className="action-card">
-            <span>💰</span>
-            <p>Create Funding Round</p>
-          </a>
-          <a href="/pitch-room" className="action-card">
-            <span>🎤</span>
-            <p>Join Pitch Room</p>
-          </a>
-          <a href="/leaderboard" className="action-card">
-            <span>🏆</span>
-            <p>View Leaderboard</p>
-          </a>
-        </div>
-      </div>
+     
     </div>
   );
 }
