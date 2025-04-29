@@ -66,8 +66,6 @@ export default function Dashboard() {
           icon="ranking"
         />
       </div>
-      
-     
     </div>
   );
 }
