@@ -5,12 +5,12 @@ export default function InvestorOffers({ offers, startupData }) {
   const [selectedOffer, setSelectedOffer] = useState(null);
 
   const handleAccept = (offerId) => {
-    // In a real app, this would update Firestore
+   
     console.log("Offer accepted:", offerId);
   };
 
   const handleReject = (offerId) => {
-    // In a real app, this would update Firestore
+   
     console.log("Offer rejected:", offerId);
   };
 

@@ -16,15 +16,14 @@ export default function PitchDeckUpload({
 
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
-    setError(''); // Reset error on new file selection
+    setError('');
     
     if (!selectedFile) return;
 
     // Validate file type
     const isPDF = selectedFile.type === 'application/pdf' || 
                  selectedFile.name.toLowerCase().endsWith('.pdf');
-    
-    // Validate file size (10MB max)
+    // Validate file size (10MB limit)
     const isWithinSizeLimit = selectedFile.size <= 10 * 1024 * 1024;
 
     if (!isPDF) {
@@ -50,7 +49,7 @@ export default function PitchDeckUpload({
       setUploading(true);
       setError('');
       const result = await uploadPitchDeck(userId, file, (progress) => {
-        // Optional: handle progress updates if needed
+       
       });
       
       if (result?.downloadURL) {

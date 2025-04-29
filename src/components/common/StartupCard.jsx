@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../styles/main.css'; // Import your CSS file for styling
+import '../../styles/main.css'; 
 
 export default function StartupCard({ startup }) {
   return (
